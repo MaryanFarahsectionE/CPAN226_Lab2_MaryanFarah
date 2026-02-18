@@ -1,4 +1,4 @@
-# This program was modified by Maryan Farah / N01674510
+# Maryan Farah / N01674510
 
 import socket
 import argparse
@@ -64,5 +64,6 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=12001)
     parser.add_argument("--output", type=str, default="received_file.jpg")
     args = parser.parse_args()
+
 
     run_server(args.port, args.output)
